@@ -29,12 +29,13 @@ class ImageGrid extends Component {
                         </div>
                     ))}
 
-                    <Button
-                        onClick={() => !isLoading && loadImages()}
-                        loading={isLoading} >
-                        Load Images
-                    </Button>
+
                 </section>
+                <Button
+                    onClick={() => !isLoading && loadImages()}
+                    loading={isLoading} >
+                    Load More Images...
+                    </Button>
                 {error && <div className="error">{JSON.stringify(error)}</div>}
             </div>
         );
